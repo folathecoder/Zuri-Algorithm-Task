@@ -1,0 +1,248 @@
+body {
+    overflow: auto;
+    margin: 0 auto;
+}
+.stock-trade {
+    margin-bottom: 10px;
+}
+
+/* .shares-vendor {
+    
+    width: 100%;
+
+}; */
+
+.market-value {
+    padding: 0 15px;
+}
+
+.graph-image {
+    width: 100%;
+}
+
+.shares-owner h4 {
+    font-size: 1.2rem;
+}
+
+.shares-owner span {
+    font-weight: 150;
+}
+
+
+.stock {
+    padding: 16px 10px;
+    background-color:#F3F7FA;
+    
+}
+
+.aapl-stock{
+    background: #ffffff;
+    
+}
+
+.shares-price p {
+    width: 65px;
+    background-color:#1B8381;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: .8rem;   
+    text-align: center;
+}
+
+.red p {
+    background-color:#A82726;
+}
+
+/* .price-value span {
+    width: 129px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1B8381;
+} */
+
+.shares-vendor span {
+   font-size: 10px; 
+}
+
+.market-value span {
+    font-size: 10px;
+}
+
+.price-value h3 {
+    
+    font-size: 36px;
+    font-weight: 700;
+    color: #1B8381;
+
+}
+
+/* .stock-stats span p{
+    width: 36px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1B8381;
+} */
+
+
+/* .stock-period h5 {
+    font-size: 15px;
+    padding-top: 15px;
+} */
+
+.stock-period span h5 {
+    color:#1B8381;
+}
+
+/* .stats-range{
+    
+     display: inline;
+  
+     width: 90%;
+} */
+/* .stock-about {
+    padding-left: 15px;
+} */
+
+.stock-about span p {
+    /* width: 36px; */
+    font-size: 24px;
+    font-weight: 400;
+    color: #1B8381;
+     overflow: hidden;
+}
+
+
+.stock-about-description {
+    /* width: 287px; */
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #b7b7b7;
+}
+.stock-about-description  span {
+    color: #1B8381;
+    font-size: 14px;
+}
+.btns {
+    display: flex;
+    
+    justify-content: flex-end;
+}
+button{
+  overflow: hidden;
+    width: 82px;
+    height: 26px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    background-color: #1B8381;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+.greenbtn a{
+  background-color: #1B8381;
+  color: #fff;
+}
+.redbtn{
+    background-color: #A82726;
+    margin-left: 30px;
+
+}
+.redbtn:hover{
+  background-color: #951e1e;
+}
+.greenbtn:hover{
+  background-color: #157574;
+}
+.redbtn a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.stats-range p{
+
+    color: #b7b7b7;
+}
+
+.stats-range p:nth-child(2){
+
+    color: #000;
+}
+
+.stock-stats span p {
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1B8381;
+ 
+}
+
+.user-name {
+    text-transform: capitalize;
+}
+
+@media (min-width:767px) {
+
+    /* .stock-trade {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding-top: 60px;
+        margin: 0 30px;
+    }
+    .market-value {
+        width: 100%;
+    } */
+
+
+    /* hr {
+        display: none;
+    } */
+    /* .stock-profile {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .stats-range p {
+        padding-right: 20px;
+        margin: 0 10px;
+        display: flex;
+        width: 100px;
+
+    }
+    .stock-about {
+        width: 48px;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .stock-about-description {
+        padding-top: 15px;
+        display: flex;
+    }
+    .btns{
+        width: 100%;
+        justify-content: flex-start;
+        padding-right: 30px;
+    }
+    .greenbtn {
+        width: 162px;
+        height: 42px;
+    }
+    .redbtn {
+        width: 162px;
+        height: 42px;  
+    }
+    .shares-vendor {
+        width: 414px;
+        padding-bottom: 50px;
+    } */
+
+}
+
+
+

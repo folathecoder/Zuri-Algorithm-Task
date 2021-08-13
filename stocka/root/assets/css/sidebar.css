@@ -1,0 +1,316 @@
+@media (max-width: 992px) {
+  body {
+    background-color: var(--color-200);
+    max-width: 100%;
+    position: relative;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .menu {
+    position: fixed;
+  }
+
+  .sidebar-container {
+    display: none;
+  }
+  .dashboard-content {
+    margin-top: 5rem;
+  }
+
+  .dash-header {
+    display: none;
+  }
+  .menu-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-200);
+    min-height: 0rem;
+    max-width: 100%;
+    box-shadow: var(--shadow-100);
+    z-index: 1000;
+  }
+  .menu-footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+  .search-icon {
+    font-size: 1.2rem;
+    color: var(--color-100);
+  }
+  .notification-button {
+    font-size: 1.2rem;
+    color: var(--color-100);
+  }
+  .notification-count {
+    position: absolute;
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: var(--color-100);
+    border-radius: 100%;
+    font-size: 0.8rem;
+    color: var(--color-200);
+    text-align: center;
+    margin-top: -0.6rem;
+    margin-left: -0.2rem;
+    cursor: pointer;
+  }
+
+  .user-profile-image img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+  }
+
+  .menu-footer i {
+    color: var(--color-300);
+  }
+
+  .menu-footer i:hover {
+    transition: 0.5s;
+    color: var(--color-100);
+  }
+}
+
+@media (min-width: 992px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+  body {
+    background-color: var(--color-200);
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  .dashboard-content {
+    margin-top: 0rem;
+  }
+  .header {
+    display: none;
+  }
+  .menu-footer {
+    display: none;
+  }
+  .sidebar-container {
+    width: 12rem;
+    height: 100%;
+    background-color: var(--color-100);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .sidebar-inner {
+    height: 100%;
+  }
+  .sidebar-logo {
+    background-color: var(--color-100);
+    height: 7.6rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .sidebar-logo img {
+    width: 3.75rem;
+    height: auto;
+  }
+  .sidebar-menu {
+    max-width: 100%;
+  }
+  .sidebar-menu-item {
+    color: var(--color-200);
+    padding: 0.5rem 1.5rem;
+    margin-left: -2rem;
+  }
+  .sidebar-menu-item:hover,
+  .sidebar-menu-item:active {
+    transition: 0.5s;
+    background-color: #219f9c;
+  }
+  .active {
+    background-color: #219f9c;
+  }
+  .sidebar-menu-icon {
+    margin-right: 0.5rem;
+    color: var(--color-200);
+  }
+  .sidebar-menu-name {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--color-200);
+  }
+
+  .dash-header {
+    background-color: var(--color-200);
+    width: 100%;
+    min-height: 0rem;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  .dash-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1.5rem;
+  }
+  .search-icon {
+    position: absolute;
+    transform: translateX(2rem) translateY(0.5rem);
+    color: #615e5e88;
+  }
+  input[type='search'] {
+    border-radius: 5rem;
+    height: 2.5rem;
+    width: 22rem;
+    margin-left: 1rem;
+    background: #e1e5e7;
+    padding-left: 3rem;
+    border: none;
+    color: #615e5e;
+  }
+  .user-name {
+    /* margin-left: 0.3rem; */
+  }
+  .notification-button {
+    font-size: 22px;
+    margin-right: 0.5rem;
+  }
+
+  .notification-count {
+    position: absolute;
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: var(--color-100);
+    border-radius: 100%;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    margin-top: -0.6rem;
+    margin-left: -0.2rem;
+    cursor: pointer;
+  }
+
+  .user-profile-image img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.3rem;
+  }
+
+  .dash-header-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    background-color: var(--color-100);
+    width: 12rem;
+    border-radius: 0.3rem;
+    box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 1rem 0rem;
+    transition: 0.5s;
+    transform: translateY(12rem);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .dash-header-dropdown span {
+    margin-right: 0.5rem;
+    color: var(--color-200);
+  }
+
+  .dash-header-dropdown > * {
+    padding: 0.2rem 1.5rem;
+    cursor: pointer;
+  }
+
+  .dash-header-dropdown a {
+    color: var(--color-200);
+    font-weight: var(--weight-500);
+    display: block;
+  }
+  .dash-header-dropdown > *:hover {
+    background-color: #219f9c;
+  }
+  .header-user-container:hover,
+  .header-user-container *:hover {
+    cursor: pointer;
+  }
+  .notif-icon-wrap {
+    margin-right: 1rem;
+    position: relative;
+  }
+  .notification-icon {
+    font-size: 28px;
+  }
+  .notification-countr {
+    color: var(--color-200);
+    background-color: var(--color-100);
+    padding: 1px 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 0.625rem;
+    text-align: center;
+  }
+  .drop-down-icon {
+    margin-left: 0.3125rem;
+  }
+  .dash-header-dropdown:hover {
+    transition: 0.5s;
+    transform: translateY(0rem);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 100;
+  }
+  .header-user-container:hover + .dash-header-dropdown {
+    transition: 0.5s;
+    transform: translateY(0rem);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 100;
+  }
+
+  .dash-header-dropdown a:hover {
+    transition: 0.5s;
+    color: #ffffff77;
+  }
+
+  .main-content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 12rem);
+    left: 12rem;
+  }
+}
+.hide-portfolio-value,
+.reveal-portfolio-value {
+  font-size: 24px;
+}
+
+.footer-dash {
+  padding: 1rem 0rem;
+  bottom: 0;
+}
+button.toggle-menu i,
+button.toggle-open i {
+  color: var(--color-300);
+}

@@ -1,0 +1,263 @@
+:root {
+
+    --main-green: #1b8381; 
+    --white: #fff;
+    --font: "Roboto", sans-serif;
+    --black: #000;
+    --grey: #a7a5a5;
+    --success: #056905;
+    --error: #e40606;
+
+}
+
+body{
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+}
+
+
+.settings-page{
+
+    margin: 5em 1em;
+}
+
+
+/* ====Header-footer css overiding email input, so i'm correcting it=== */
+
+input[type=email] {
+  
+/* this is bootstrap form-control property */
+        width: 100%;
+        height: 40px;
+        padding: .375rem .75rem !important;
+        font-size: 1rem;
+        line-height: 1.42857143 !important;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc !important;
+        border-radius: 4px;
+        
+        -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    
+    
+}
+
+.paycard img {
+
+    display: inline;
+}
+
+
+/* Styles for push notifications toggle */
+
+.form-check-input:checked {
+    background-color: var(--color-100);
+    border-color: var(--color-100);
+}
+
+.form-check-input {
+
+    background-color: rgb(185, 185, 185);
+    border: rgb(185, 185, 185);
+}
+
+
+
+/* =======Typography ====*/
+
+h3 {
+
+    color: var(--color-100);
+    
+}
+
+
+
+/* ======Upload button styles==== */
+#uploadBtn{
+
+    color: transparent;
+}
+
+#uploadBtn::-webkit-file-upload-button{
+
+    visibility: hidden;
+}
+
+
+
+#uploadBtn::before{
+
+    content: "Upload";
+    color: #fff;
+    padding: 1em; 
+    justify-content: center;
+    
+}
+
+input.btn-success {
+
+    color: #fff;
+    background-color: var(--color-100);
+    border-color: var(--color-100);
+    width: 180px;
+    padding-left: 35px;
+    
+}
+
+.btn-success {
+
+    background-color: var(--color-100);
+    border-color: var(--color-100);
+}
+
+.btn-success:hover {
+
+    background-color: #054241;
+    border-color: #054241;
+}
+
+/* Profile image */
+
+
+
+/* #removeprofileimage{
+
+    position: relative;
+    bottom: 150px;
+    right: 0;
+    border: solid 1px grey;
+} */
+
+
+/* .btn-con{
+
+    margin-top: -90px;
+} */
+
+
+/* ====================================
+
+        FORM & INPUTS
+   ==================================== */
+
+   .form-container {
+
+    position: relative;
+}
+
+/* =========initail display property to hide the error message ===== */
+
+.form-container small{
+
+    visibility: hidden;
+}
+
+
+ /* ========= Position property for them icons ===== */
+  .form-container i {
+
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    color: var(--grey);
+    visibility: hidden;
+}
+
+
+
+   /* ====set border color for input when input is corrects */
+
+   .form-container.success input{
+
+    border-color: var(--success);
+   }
+
+
+   /* ====set border color for input when input its incorrects */
+
+   .form-container.error input{
+
+    border-color: var(--error);
+   }
+
+
+ /* ====set color for checkmark icon when input is corrects */
+
+ .form-container.success i.fa-check-circle{
+
+        color: var(--success);
+        visibility: visible;
+    }
+
+
+   /* ====set color for exclamation icon when input its incorrects */
+
+   .form-container.error i.fa-exclamation-circle{
+
+        color: var(--error);
+        visibility: visible;
+   }
+
+   /* ====set color for error message */
+   .form-container.error small {
+
+    color: var(--error);
+    visibility: visible;
+}
+
+
+
+
+/* 
+.accNumber i {
+
+    position: absolute;
+    top: 35px;
+}  */
+
+
+
+
+
+/* 
+@media (min-width: 950px) {
+
+    
+#removeprofileimage{
+
+    position: relative;
+    top: -150px;
+    right: 0px;
+    border: solid 1px grey;
+    display: inline;
+    
+    
+}
+
+.btn-con {
+
+    position: relative;
+    right: 10px;
+    top: -25px;
+
+    
+}
+
+    
+} */
+
+.user-name,
+#firstname,
+#lastname {
+    text-transform: capitalize;
+}

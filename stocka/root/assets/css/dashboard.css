@@ -1,0 +1,125 @@
+* {
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: var(--font-200);
+}
+
+.table-borderless td,
+.table-borderless th {
+  border: 0;
+}
+
+.bg-green {
+  background-color: var(--color-100) !important;
+}
+
+.bg-red {
+  background-color: var(--color-500) !important;
+}
+
+.bg-black {
+  background-color: var(--color-300) !important;
+}
+
+.bg-white {
+  background-color: var(--color-200) !important;
+}
+
+.bg-grey {
+  background-color: var(--color-400) !important;
+}
+
+.text-green {
+  color: var(--color-100) !important;
+}
+
+.text-red {
+  color: var(--color-500) !important;
+}
+
+.text-white {
+  color: var(--color-200) !important;
+}
+
+.text-black {
+  color: var(--color-300) !important;
+}
+
+.text-grey {
+  color: var(--color-400) !important;
+}
+
+.btn-green {
+  background-color: var(--color-100) !important;
+  color: var(--color-200) !important;
+}
+
+.btn-white {
+  color: var(--color-100) !important;
+  background-color: var(--color-200) !important;
+}
+
+.btn-red {
+  background-color: var(--color-500) !important;
+  color: var(--color-200) !important;
+}
+
+.h-min-div {
+  min-height: 330px;
+}
+
+.mt-n2 {
+  margin-top: -0.75rem !important;
+}
+
+.bg-gray {
+  background-color: #f3f7fa;
+}
+
+.dashboard-content {
+  position: relative !important;
+  /* z-index: -1 !important; */
+}
+
+.component-border {
+  border-radius: 1.25rem !important;
+  box-shadow: var(--shadow-100) !important;
+}
+.chart-component {
+  min-height: 20.625rem !important;
+  background-image: url(https://res.cloudinary.com/griffintech/image/upload/v1624897146/WhatsApp_Image_2021-06-28_at_17.01.34_dzhwnu.jpg);
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-position: center;
+  background-color: rgba(58, 58, 58, 0.082);
+}
+
+.reveal-portfolio-value,
+.hide-portfolio-value {
+  cursor: pointer;
+}
+/* Hide the portfolio visible icon on load */
+.reveal-portfolio-value {
+  display: none;
+}
+
+.user-name {
+  text-transform: capitalize;
+}
+
+@media (max-width: 500px) {
+  .qty {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .stat-chart {
+    display: block;
+  }
+  .stat-chart > * {
+    width: 100%;
+  }
+}

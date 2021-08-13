@@ -1,0 +1,262 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+body {
+  text-transform: capitalize;
+  font-family: var(--font-200);
+
+  /* temporary code for convenience */
+  overflow-y: auto !important;
+}
+
+/* * PENDING/HISTORY TAB BUTTONS */
+.pend-hist-btns {
+  padding-top: 5rem;
+}
+.pending-btn,
+.history-btn {
+  padding: 0.625rem 4rem;
+  margin: 0;
+
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: var(--weight-700);
+  border: none;
+  border-radius: 5px;
+  background-color: #e6e8ea;
+  transition: 200ms;
+}
+.selected-tab {
+  color: #fff;
+  background-color: var(--color-100);
+}
+
+/* *DESKTOP ROWS */
+.title-row {
+  color: #b7b7b7;
+}
+.stock-row {
+  margin-bottom: 0.625rem;
+}
+.col {
+  display: flex;
+  align-items: center;
+}
+.date {
+  color: #b7b7b7;
+  font-family: var(--font-200);
+  font-size: 1rem;
+  font-weight: var(--weight-400);
+  line-height: 21px;
+}
+.name {
+  font-size: 1rem;
+  font-weight: var(--weight-500);
+}
+.type,
+.price,
+.amount,
+.filled,
+.total,
+.status {
+  font-family: var(--font-200);
+  font-size: 1rem;
+  font-weight: var(--weight-500);
+  line-height: 28px;
+}
+.cancel button {
+  font-family: var(--font-200);
+  font-size: 14px;
+  font-weight: var(--weight-400);
+  line-height: 16px;
+  padding: 0.5625rem 1.25rem;
+  border: 2px solid #b7b7b7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: var(--color-200);
+  text-transform: capitalize;
+}
+.status {
+  padding: 0.3125rem 0;
+}
+
+/* *MOBILE ROWS */
+.mobile-pend-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid #b7b7b7;
+  max-width: 500px;
+  margin: 0 auto 1.25rem auto;
+}
+.mobile-hist-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid #b7b7b7;
+  max-width: 500px;
+  margin: 0 auto 1.25rem auto;
+}
+.m-buy-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.m-filled {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.m-name-wrap {
+  display: flex;
+  padding: 0 1.25rem;
+  flex-direction: column;
+  flex: 2;
+}
+.m-name {
+  font-weight: var(--weight-400);
+}
+.m-type,
+.m-name {
+  font-family: var(--font-200);
+  font-size: 20px;
+  line-height: 28px;
+}
+.m-price-wrap,
+.m-amount-wrap,
+.m-total-wrap,
+.m-name-date,
+.m-filled-wrap {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--weight-500);
+}
+.m-price-text,
+.m-amount-text,
+.m-total-text,
+.m-filled-text {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+.m-date-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.m-date {
+  color: var(--color-400);
+  font-family: var(--font-200);
+  font-size: 16px;
+  font-weight: var(--weight-400);
+}
+.m-cancel button {
+  font-family: var(--font-200);
+  font-size: 14px;
+  font-weight: var(--weight-500);
+  line-height: 16px;
+  padding: 0.5625rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-300);
+  background-color: #b7b7b7;
+  background-color: #ccc9c9;
+  text-transform: capitalize;
+}
+.m-status {
+  font-family: var(--font-200);
+  font-size: 20px;
+  font-weight: var(--weight-400);
+  display: flex;
+  justify-content: flex-end;
+}
+.green {
+  color: var(--color-100);
+}
+.red {
+  color: var(--color-500);
+}
+.grey {
+  color: var(--color-400);
+}
+.remove {
+  display: none;
+}
+
+/* ! mobile screens */
+/* @media (max-width: 769px) { */
+@media (max-width: 993px) {
+  .pend-hist-btns {
+    max-width: 500px;
+    margin: 1.25rem auto 0.625rem auto;
+  }
+  .pending-btn,
+  .history-btn {
+    padding: 0.625rem 0;
+    max-width: 200px;
+    width: 100%;
+  }
+  /* font sizes */
+  /* blank {
+    font-size: 14px;
+  }
+  blank {
+    font-size: 18px;
+  }
+  blank {
+    font-size: 20px;
+  }
+  blank {
+    font-size: 24px;
+  }
+  blank {
+    font-size: 24px;
+    padding: 2px 7px 0 7px;
+  } */
+}
+
+/* large screens */
+@media (min-width: 1023px) {
+  /* font sizes */
+  /* blank {
+    font-size: 14px;
+  }
+  blank {
+    font-size: 16px;
+  }
+  blank {
+    font-size: 24px;
+  }
+  blank {
+    font-size: 36px;
+  } */
+}
+
+/* larger screens*/
+@media (min-width: 1440px) {
+  /* font sizes */
+  /* blank {
+    font-size: 16px;
+  }
+  blank {
+    font-size: 20px;
+  }
+  blank {
+    font-size: 28px;
+  }
+  blank {
+    font-size: 48px;
+  } */
+}
+
+.dash-header-dropdown {
+  margin-right: 0.5rem;
+}
+
+.user-name {
+  text-transform: capitalize;
+}
