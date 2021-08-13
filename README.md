@@ -1,1 +1,1 @@
-# Zuri-Algorithm-Task
+# Zuri Internship Program
